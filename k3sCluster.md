@@ -96,3 +96,24 @@ KSomeRandomTextGoesHere36::server:7aSomeOtherText8d
 
 **copy** the text returned, I will refer to it as `mynodetoken` in the following steps. In the example output I have removed my specific token and replaced it with `SomeRandomTextGoesHere` and `SomeOtherText`. Your token will have your specific values.
 
+## Installing on **Worker Nodes**
+
+In order to join worker nodes, we need to pass in server details to the install script. You will need the following information:
+
+* `myserverIP` - the IP address or DNS name of you master/main/control-plane node (in my example it is `nuc1` with IP address `192.168.3.100`)
+* `mynodetoken` - you got this in the previous step
+
+On your **worker Node**, run the following command:
+
+```shell
+curl -sfL https://get.k3s.io | K3S_URL=https://myserverIP:6443 K3S_TOKEN=mynodetoken sh -
+```
+
+Make sure to replace `myserverIP` and `mynodetoken` with the real values.
+
+It should look something like this:
+
+```shell
+curl -sfL https://get.k3s.io | K3S_URL=https://192.168.3.100:6443 K3S_TOKEN=KSomeRandomTextGoesHere36::server:7aSomeOtherText8d sh -
+```
+
