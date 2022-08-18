@@ -49,7 +49,9 @@ The Installer will create a link to the k3s command when you type `kubectl`
 /usr/local/bin/kubectl -> k3s
 ```
 
-in your terminal you can type the following to see the current state of kubernetes:
+## Get Cluster Status
+
+In your terminal you can type the following to see the current state of kubernetes:
 
 ```shell
 sudo kubectl get nodes
