@@ -6,8 +6,8 @@ Creating a [k3s](https://k3s.io/) cluster is relatively simple, but there were s
 
 Even though it is possible to run a single node, to really test the cluster you will need at least two nodes.
 
-* Node 1 will be the master/main node - aka Control Plane (nuc1)
-* Node 2 will be a worker node (nuc2)
+* Node 1 will be the master/main node - aka Control Plane
+* Node 2 will be a worker node
 
 ## Installing k3s on Control Plane
 
