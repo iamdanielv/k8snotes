@@ -59,3 +59,19 @@ nuc1   Ready    control-plane,master   4m25s   v1.24.3+k3s1
 ```
 
 Here we see that my master/main/control-plane node is named `nuc1` and it is currently in `Ready` state.
+
+## Alternative - Running without sudo -- LESS Secure
+
+If you don't run as root or use sudo you will get an error similar to:
+
+```shell
+daniel@nuc1:~$ kubectl get nodes
+WARN[0000] Unable to read /etc/rancher/k3s/k3s.yaml, please start server with --write-kubeconfig-mode to modify kube config permissions 
+error: error loading config file "/etc/rancher/k3s/k3s.yaml": open /etc/rancher/k3s/k3s.yaml: permission denied
+```
+
+you can change the permissions of the `k3s.yaml` file so you don't have to use sudo every time, but that reduces the security of your installation. It is up to you if you are ok with taking the risk.
+
+```shell
+sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+```
