@@ -75,3 +75,24 @@ you can change the permissions of the `k3s.yaml` file so you don't have to use s
 ```shell
 sudo chmod 644 /etc/rancher/k3s/k3s.yaml
 ```
+
+## Get Cluster **Node Token**
+
+In order to join worker nodes, you need to get the node token from the control plane node. It is stored at `/var/lib/rancher/k3s/server/node-token`
+
+to print it on the terminal you can type:
+
+```shell
+sudo cat /var/lib/rancher/k3s/server/node-token
+```
+
+it should respond with something similar to:
+
+```shell
+daniel@nuc1:~$ sudo cat /var/lib/rancher/k3s/server/node-token
+[sudo] password for daniel: 
+KSomeRandomTextGoesHere36::server:7aSomeOtherText8d
+```
+
+**copy** the text returned, I will refer to it as `mynodetoken` in the following steps. In the example output I have removed my specific token and replaced it with `SomeRandomTextGoesHere` and `SomeOtherText`. Your token will have your specific values.
+
