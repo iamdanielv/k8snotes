@@ -158,3 +158,25 @@ Created symlink /etc/systemd/system/multi-user.target.wants/k3s-agent.service â†
 [INFO]  systemd: Starting k3s-agent
 
 ```
+
+## Get Cluster Status - After Adding Worker Node
+
+Back on your `master/main/control-plane` node, run the following command to see the current state of the cluster.
+
+```shell
+sudo kubectl get nodes
+```
+
+it should look something similar to:
+
+```shell
+daniel@nuc1:~$ sudo kubectl get nodes
+[sudo] password for daniel: 
+NAME   STATUS   ROLES                  AGE   VERSION
+nuc1   Ready    control-plane,master   17m   v1.24.3+k3s1
+nuc2   Ready    <none>                 14m   v1.24.3+k3s1
+```
+
+> Note that the previous command was run on **nuc1** which is my control-plane node.
+
+In the output we see that there are two nodes `nuc1` and `nuc2` and they are currently in the `Ready` state.
