@@ -13,12 +13,17 @@ Even though it is possible to run a single node, to really test the cluster you 
 
 >WARNING: Piping a random script from the internet into your shell and running it is very dangerous. I've included the piped command to make it easier to cut and paste, but you should download the script and look at it to make sure it isn't doing anything dangerous.
 
+You may have to install `curl`, you can do so with:
+
+```shell
+sudo apt install curl
+```
+
 **Node 1** will be our control plane, in order to install k3s, you can run the following script:
 
 ```shell
 curl -sfL https://get.k3s.io | sh -
 ```
-
 
 The script will ask for your sudo password and download all the required tools. It should look something like this once it's finished:
 
@@ -102,6 +107,12 @@ In order to join worker nodes, we need to pass in server details to the install 
 
 * `myserverIP` - the IP address or DNS name of you master/main/control-plane node (in my example it is `nuc1` with IP address `192.168.3.100`)
 * `mynodetoken` - you got this in the previous step
+
+You may have to install `curl`, you can do so with:
+
+```shell
+sudo apt install curl
+```
 
 On your **worker Node**, run the following command:
 
