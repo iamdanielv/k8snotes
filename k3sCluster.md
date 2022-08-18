@@ -128,3 +128,31 @@ It should look something like this:
 curl -sfL https://get.k3s.io | K3S_URL=https://192.168.3.100:6443 K3S_TOKEN=KSomeRandomTextGoesHere36::server:7aSomeOtherText8d sh -
 ```
 
+In the above example,
+
+* My master/main/control-plane is at `192.168.3.100`
+* My worker node is `nuc2`
+
+The response should be something like this:
+
+```shell
+daniel@nuc2:~$ curl -sfL https://get.k3s.io | K3S_URL=https://192.168.3.100:6443 K3S_TOKEN=KSomeRandomTextGoesHere36::server:7aSomeOtherText8d sh -
+[INFO]  Finding release for channel stable
+[INFO]  Using v1.24.3+k3s1 as release
+[INFO]  Downloading hash https://github.com/k3s-io/k3s/releases/download/v1.24.3+k3s1/sha256sum-amd64.txt
+[INFO]  Downloading binary https://github.com/k3s-io/k3s/releases/download/v1.24.3+k3s1/k3s
+[INFO]  Verifying binary download
+[INFO]  Installing k3s to /usr/local/bin/k3s
+[INFO]  Skipping installation of SELinux RPM
+[INFO]  Creating /usr/local/bin/kubectl symlink to k3s
+[INFO]  Creating /usr/local/bin/crictl symlink to k3s
+[INFO]  Creating /usr/local/bin/ctr symlink to k3s
+[INFO]  Creating killall script /usr/local/bin/k3s-killall.sh
+[INFO]  Creating uninstall script /usr/local/bin/k3s-agent-uninstall.sh
+[INFO]  env: Creating environment file /etc/systemd/system/k3s-agent.service.env
+[INFO]  systemd: Creating service file /etc/systemd/system/k3s-agent.service
+[INFO]  systemd: Enabling k3s-agent unit
+Created symlink /etc/systemd/system/multi-user.target.wants/k3s-agent.service → /etc/systemd/system/k3s-agent.service.
+[INFO]  systemd: Starting k3s-agent
+
+```
