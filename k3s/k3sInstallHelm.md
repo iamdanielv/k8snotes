@@ -68,3 +68,7 @@ You should now be able to use the `kubectl` and `helm` commands without requirin
 ### For **Production** use
 
 We would take advantage of the environment variable `export KUBECONFIG=/etc/rancher/k3s/k3s.yaml` and NOT copy the file to the local user's directory
+
+## Conclusion
+
+**That's it!** You now have Helm installed.  Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV).
