@@ -9,3 +9,4 @@ Organize K8s Notes
 ## k3s
 
 * [Creating a K3s Cluster](k3s/k3sCluster.md)
+* [Install Helm](k3s/k3sInstallHelm.md)
