@@ -180,3 +180,9 @@ nuc2   Ready    <none>                 14m   v1.24.3+k3s1
 > Note that the previous command was run on **nuc1** which is my control-plane node.
 
 In the output we see that there are two nodes `nuc1` and `nuc2` and they are currently in the `Ready` state.
+
+## Conclusion and Next Steps
+
+**That's it!** You now have a k3s cluster that contains 2 nodes. Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV).
+
+As a next step, you can [Install Helm](k3sInstallHelm.md) as your package / software manager for kubernetes.
