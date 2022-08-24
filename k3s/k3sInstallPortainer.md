@@ -104,3 +104,10 @@ On this screen you will see a list of your current environments. We only have on
 
 ![Portainer Local Environment Details](images/portainerLocalDetails.png)
 
+## Conclusion and Next Steps
+
+**That's it!** You now have Portainer installed in your cluster.
+
+Portainer has a lot of features and is beyond the scope of this tutorial, but you can learn more at [Portainer.io](https://www.portainer.io/)
+
+Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV).
