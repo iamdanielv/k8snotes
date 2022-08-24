@@ -87,3 +87,20 @@ https://192.168.3.100:9443
 ```
 
 In my case **nuc1**'s IP is **192.168.3.100**, and Portainer is exposed on port **9443**.
+
+Copy and paste the URL (`https://192.168.3.100:9443`) into your favorite browser and it should respond with something similar to:
+
+![Portainer Login](images/portainerLogin.png)
+
+Choose a user name and password and click on "Create User". You should be redirected to the welcome page which should look something like this:
+
+![Portainer Welcome](images/portainerWelcome.png)
+
+Click on "Get Started - Proceed using the local environment which Portainer is running in". That should take you to the local environment management page, which should look similar to:
+
+![Portainer Local Environment](images/portainerLocal.png)
+
+On this screen you will see a list of your current environments. We only have one environment called local, it should list the details for your machines. In my case it shows 2 nodes running Kubernetes v1.24.3+k3s1. Click on the row labeled "local", which will take you to the details for the local environment. It should look something like this:
+
+![Portainer Local Environment Details](images/portainerLocalDetails.png)
+
