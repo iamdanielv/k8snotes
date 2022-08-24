@@ -10,3 +10,4 @@ Organize K8s Notes
 
 * [Creating a K3s Cluster](k3s/k3sCluster.md)
 * [Install Helm](k3s/k3sInstallHelm.md)
+* [Install Portainer](k3s/k3sInstallPortainer.md)
