@@ -11,6 +11,7 @@ Organize K8s Notes
 * [Creating a K3s Cluster](k3s/k3sCluster.md)
 * [Install Helm](k3s/k3sInstallHelm.md)
 * [Install Portainer](k3s/k3sInstallPortainer.md)
+* [Upgrade K3s](k3s/k3sUpgrade.md)
 
 
 Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV).
