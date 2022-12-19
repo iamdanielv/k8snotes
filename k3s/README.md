@@ -8,4 +8,6 @@ Here you will find guides for [k3s](https://k3s.io/)
 
 * How to [Install Portainer](k3sInstallPortainer.md)
 
+* How to [Upgrade K3s](k3sUpgrade.md)
+
 Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV).
