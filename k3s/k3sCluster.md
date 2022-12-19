@@ -11,7 +11,7 @@ Even though it is possible to run a single node, to really test the cluster you 
 
 ## Installing k3s on Control Plane
 
->WARNING: Piping a random script from the internet into your shell and running it is very dangerous. I've included the piped command to make it easier to cut and paste, but you should download the script and look at it to make sure it isn't doing anything dangerous.
+>**WARNING:** Piping a random script from the internet into your shell and running it is very dangerous. I've included the piped command to make it easier to cut and paste, but you should download the script and look at it to make sure it isn't doing anything dangerous.
 
 You may have to install `curl`, you can do so with:
 
