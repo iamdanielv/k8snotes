@@ -6,6 +6,8 @@ but was confused by the wording:
 
 What they really mean is to run the same commands used during the initial install.
 
+>**Note:** Run the upgrade on Control Plane first 
+
 On the **Control Plane**, you would run:
 
 ```shell
