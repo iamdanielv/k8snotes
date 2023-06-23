@@ -62,7 +62,7 @@ it should respond with something similar to:
 ```shell
 daniel@nuc1:~$ sudo kubectl get nodes
 NAME   STATUS   ROLES                  AGE     VERSION
-nuc1   Ready    control-plane,master   4m25s   v1.24.3+k3s1
+nuc1   Ready    control-plane,master   4m25s   v1.26.5+k3s1
 ```
 
 Here we see that my master/main/control-plane node is named `nuc1` and it is currently in `Ready` state.
@@ -141,8 +141,8 @@ The response should be something like this:
 daniel@nuc2:~$ curl -sfL https://get.k3s.io | K3S_URL=https://192.168.3.100:6443 K3S_TOKEN=KSomeRandomTextGoesHere36::server:7aSomeOtherText8d sh -
 [INFO]  Finding release for channel stable
 [INFO]  Using v1.24.3+k3s1 as release
-[INFO]  Downloading hash https://github.com/k3s-io/k3s/releases/download/v1.24.3+k3s1/sha256sum-amd64.txt
-[INFO]  Downloading binary https://github.com/k3s-io/k3s/releases/download/v1.24.3+k3s1/k3s
+[INFO]  Downloading hash https://github.com/k3s-io/k3s/releases/download/v1.26.5+k3s1/sha256sum-amd64.txt
+[INFO]  Downloading binary https://github.com/k3s-io/k3s/releases/download/v1.26.5+k3s1/k3s
 [INFO]  Verifying binary download
 [INFO]  Installing k3s to /usr/local/bin/k3s
 [INFO]  Skipping installation of SELinux RPM
@@ -173,8 +173,8 @@ it should look something similar to:
 daniel@nuc1:~$ sudo kubectl get nodes
 [sudo] password for daniel: 
 NAME   STATUS   ROLES                  AGE   VERSION
-nuc1   Ready    control-plane,master   17m   v1.24.3+k3s1
-nuc2   Ready    <none>                 14m   v1.24.3+k3s1
+nuc1   Ready    control-plane,master   17m   v1.26.5+k3s1
+nuc2   Ready    <none>                 14m   v1.26.5+k3s1
 ```
 
 > Note that the previous command was run on **nuc1** which is my control-plane node.
