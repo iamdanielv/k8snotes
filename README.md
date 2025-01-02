@@ -14,4 +14,4 @@ Organize K8s Notes
 * [Upgrade K3s](k3s/k3sUpgrade.md)
 
 
-Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV).
+Let me know if you have any questions. I can be reached at [@IAmDanielV](https://twitter.com/IAmDanielV) or [@iamdanielv.bsky.social](https://bsky.app/profile/iamdanielv.bsky.social).
